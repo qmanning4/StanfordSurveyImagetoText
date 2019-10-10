@@ -16,9 +16,6 @@ public class Detect {
         detectText(System.getProperty("user.dir") + "/src/main/resources/image1.jpeg", System.out);
     }
 
-    private BufferedImage cropImage(BufferedImage src, Rectangle rect, int x, int y) {
-        return src.getSubimage(x, y, rect.width, rect.height);
-    }
 
     public static void detectText(String filePath, PrintStream out) throws Exception, IOException {
         List<AnnotateImageRequest> requests = new ArrayList<>();
